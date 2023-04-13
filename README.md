@@ -4,7 +4,7 @@
 
 ## Steps:
 * Connect to your `MetaMask` wallet. 
-* Sign a transaction using `MetaMas`k and package it as a message. (Verify it first by use `ethers.utils.verifyMessage`)
+* Sign a transaction using `MetaMask` and package it as a message. (Verify it first by use `ethers.utils.verifyMessage`)
 * Transmit the message to the server.
 * The server generates two instructions, one for the `Secp256k1 Program` and another for your custom program.
 * The `Secp2561 Program` validates the signature, public key, and message in the instruction data. If invalid, the transaction is rejected; otherwise, it is accepted.
