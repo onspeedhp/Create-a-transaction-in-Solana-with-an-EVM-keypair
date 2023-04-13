@@ -18,29 +18,26 @@
 * To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign`(signer) would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
 * If you serialize the same transaction multiple times, set `skipPreflight:true` to avoid issues.
 
-    
-# Install dependencies
+# In user role
 
-## In user role
-
-### Install all dependencies
+## Install all dependencies
 
 ```bash
 yarn install
 ```
 
-### Run
+## Run
 ```bash
 yarn start
 ```
 
-## In server role
+# In server role
 
-### Install all dependencies
+## Install all dependencies
 ```bash
 yarn install
 ```
-### Run
+## Run
 ```bash
 node server.js
 ```
