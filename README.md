@@ -1,4 +1,4 @@
-# Use metamask to interact with solana blockchain
+# Create a transaction in Solana with an EVM keypair
 
 ![alt text](flow.png)
 
