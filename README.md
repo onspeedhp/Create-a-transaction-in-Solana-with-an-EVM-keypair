@@ -16,7 +16,7 @@
 ## Updates:
 * Slight modifications were made on the client side. A Solana `Keypair` is now used to sign the transaction, which is serialized and sent to the server.
 * If it only takes one person to sign, use `sign`.
-* To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign`(signer) would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
+* To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign(signer)` would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
 * If you serialize the same transaction multiple times, the network state will be out of sync, so set `skipPreflight:true` when use `sendEncodedTransaction` instead of `sendTransaction` to avoid issues.
 
 # In user role
