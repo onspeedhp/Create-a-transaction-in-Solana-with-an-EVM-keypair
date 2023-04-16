@@ -1,4 +1,4 @@
-# Use metamask to interact with solana blockchain
+# Create a transaction in Solana with an EVM keypair
 
 ![alt text](flow.png)
 
@@ -15,32 +15,30 @@
   
 ## Updates:
 * Slight modifications were made on the client side. A Solana `Keypair` is now used to sign the transaction, which is serialized and sent to the server.
-* To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign`(signer) would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
-* If you serialize the same transaction multiple times, set `skipPreflight:true` to avoid issues.
+* If it only takes one person to sign, use `sign`.
+* To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign(signer)` would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
+* If you serialize the same transaction multiple times, the network state will be out of sync, so set `skipPreflight:true` when use `sendEncodedTransaction` instead of `sendTransaction` to avoid issues.
 
-    
-# Install dependencies
+# In user role
 
-## In user role
-
-### Install all dependencies
+## Install all dependencies
 
 ```bash
 yarn install
 ```
 
-### Run
+## Run
 ```bash
 yarn start
 ```
 
-## In server role
+# In server role
 
-### Install all dependencies
+## Install all dependencies
 ```bash
 yarn install
 ```
-### Run
+## Run
 ```bash
 node server.js
 ```
