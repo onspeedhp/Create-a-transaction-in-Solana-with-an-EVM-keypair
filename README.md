@@ -10,13 +10,12 @@ These are the references:
 * [How to Write Your First Anchor Program in Solana](https://www.quicknode.com/guides/solana-development/anchor/how-to-write-your-first-anchor-program-in-solana-part-1/)
 
 ## Table of Contents
-* [Flow](#Flow)
 * [Connect and Signing with Metamask](#Connect-and-Signing-with-Metamask)
 * [Write Solana' Program and interact](#Write-Solana-Program)
-* [Discoveries](#Combination)
+* [Combination](#Combination)
+* [Discoveries](#Discoveries)
 * [How to install and run](#Install-and-run)
-* [Updates](#Updates)
-  
+    
 ## Connect and Signing with Metamask:
 * Create a simple DApp to connect with your Metamask wallet.
 * Creaet input box for user to input the message.
