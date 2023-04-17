@@ -10,11 +10,16 @@ These are the references:
 * [How to Write Your First Anchor Program in Solana](https://www.quicknode.com/guides/solana-development/anchor/how-to-write-your-first-anchor-program-in-solana-part-1/)
 
 ## Table of Contents
-* [Connect and Signing with Metamask](#Connect-and-Signing-with-Metamask)
-* [Write Solana' Program and interact](#Write-Solana-Program)
-* [Combination](#Combination)
-* [Discoveries](#Discoveries)
-* [How to install and run](#Install-and-run)
+- [Create a transaction in Solana with an EVM keypair](#create-a-transaction-in-solana-with-an-evm-keypair)
+  - [Project description](#project-description)
+  - [Table of Contents](#table-of-contents)
+  - [Connect and Signing with Metamask:](#connect-and-signing-with-metamask)
+  - [Write Solana Program:](#write-solana-program)
+  - [Combination:](#combination)
+  - [Discoveries:](#discoveries)
+  - [Install and run](#install-and-run)
+    - [In user role](#in-user-role)
+    - [In server role](#in-server-role)
     
 ## Connect and Signing with Metamask:
 * Create a simple DApp to connect with your Metamask wallet.
@@ -30,7 +35,7 @@ These are the references:
 ## Combination:
 * Create `client` and `server`, client to interact with metamask wallet, and server to interact with solana network.
 * Get the signature, message, publickey of the eth address and wrap it up as the data of an instruction and send it to the server (Note: The message should be modified because when using the personal_sign method the message was modified to `\x19Ethereum Signed Message:\n${message.length}${message}`)
-* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account.
+* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account. ([Example](https://beta.solpg.io/643cfedb67edfe0f00106a25))
 * The server will create a transaction with 2 instructions, one to send to the Secp256k1 Program to verify the signature of the metamask wallet and one to interact with your Program. 
   
 ## Discoveries:
@@ -38,26 +43,14 @@ These are the references:
 * To accommodate multiple signers, use `transaction.partialSign(signer)` to sign the transaction. Using `transaction.sign(signer)` would nullify the signatures of previous signers, preventing confirmation of transactions with multiple signers.
 * If you serialize the same transaction multiple times, the network state will be out of sync, so set `skipPreflight:true` when use `sendEncodedTransaction` instead of `sendTransaction` to avoid issues.
 
-# In user role
+## Install and run
 
-## Install all dependencies
-
-```bash
-yarn install
-```
-
-## Run
+### In user role
 ```bash
 yarn start
 ```
 
-# In server role
-
-## Install all dependencies
-```bash
-yarn install
-```
-## Run
+### In server role
 ```bash
 node server.js
 ```
