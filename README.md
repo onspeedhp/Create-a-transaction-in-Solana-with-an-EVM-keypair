@@ -35,7 +35,7 @@ These are the references:
 ## Combination:
 * Create `client` and `server`, client to interact with metamask wallet, and server to interact with solana network.
 * Get the signature, message, publickey of the eth address and wrap it up as the data of an instruction and send it to the server (Note: The message should be modified because when using the personal_sign method the message was modified to `\x19Ethereum Signed Message:\n${message.length}${message}`)
-* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account. ([Example](https://beta.solpg.io/643cfedb67edfe0f00106a25))
+* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account ([Example](https://beta.solpg.io/643cfedb67edfe0f00106a25))
 * The server will create a transaction with 2 instructions, one to send to the Secp256k1 Program to verify the signature of the metamask wallet and one to interact with your Program. 
   
 ## Discoveries:
