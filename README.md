@@ -52,6 +52,7 @@ yarn start
 
 ### In server role
 ```bash
+cd server
 node server.js
 ```
 
