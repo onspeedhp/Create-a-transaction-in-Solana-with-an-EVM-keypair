@@ -14,7 +14,7 @@ These are the references:
   - [Project description](#project-description)
   - [Table of Contents](#table-of-contents)
   - [Connect and Signing with Metamask:](#connect-and-signing-with-metamask)
-  - [Write Solana Program:](#write-solana-program)
+  - [Write Anchor Program in Solana:](#write-anchor-program-in-solana)
   - [Combination:](#combination)
   - [Discoveries:](#discoveries)
   - [Install and run](#install-and-run)
@@ -27,7 +27,7 @@ These are the references:
 * Signing your message with `Metamask` by using `personal_sign` method. (Note: It is necessary to convert the message to hex and add the currency `0x`)
 * Verify this signature by using `ethers.utils.verifyMessage` to verify the signature.
 
-## Write Solana Program:
+## Write Anchor Program in Solana:
 * Write a simple transaction to interact with the `Secp256k1 Program` on the `Solana` network.
 * Write your own program to create PDA accounts and deploy it to the `Solana` network.
 * Write your own client.ts to interact with the program you wrote.
