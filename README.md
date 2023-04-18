@@ -28,14 +28,14 @@ These are the references:
 * Verify this signature by using `ethers.utils.verifyMessage` to verify the signature.
 
 ## Write Anchor Program in Solana:
-* Write a simple transaction to interact with the `Secp256k1 Program` on the `Solana` network.
+* Write a simple transaction to interact with the `Secp256k1 Program` on the `Solana` network ([Example](https://beta.solpg.io/643e4a4667edfe0f00106a28)).
 * Write your own program to create PDA accounts and deploy it to the `Solana` network.
 * Write your own client.ts to interact with the program you wrote.
 
 ## Combination:
 * Create `client` and `server`, client to interact with metamask wallet, and server to interact with solana network.
 * Get the signature, message, publickey of the eth address and wrap it up as the data of an instruction and send it to the server (Note: The message should be modified because when using the personal_sign method the message was modified to `\x19Ethereum Signed Message:\n${message.length}${message}`)
-* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account ([Example](https://beta.solpg.io/643cfedb67edfe0f00106a25))
+* Update your program has written above, create 2 functions, one is create PDA account has amount, another is transfer amount from one PDA account to another PDA account ([Example](https://beta.solpg.io/643cfedb67edfe0f00106a25)).
 * The server will create a transaction with 2 instructions, one to send to the Secp256k1 Program to verify the signature of the metamask wallet and one to interact with your Program. 
   
 ## Discoveries:
