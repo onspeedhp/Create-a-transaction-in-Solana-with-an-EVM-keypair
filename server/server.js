@@ -38,7 +38,7 @@ const sendTransaction = async(base64Transaction) => {
       maxRetries: 5,
       skipPreflight: true,
     });
-    console.log('Sent transaction', signature);
+    console.log('Send transaction', signature);
 
     await connection.confirmTransaction(signature, 'confirmed');
     console.log('Confirmed transaction', signature);
@@ -55,7 +55,7 @@ app.post('/transaction', async (req, res) => {
     return;
   }
 
-  // Gọi hàm do_something để xử lý transaction
+  // Gọi hàm để xử lý transaction
   const signature = await sendTransaction(base64Transaction);
 
   res.status(200).send({message: signature});
