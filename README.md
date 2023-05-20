@@ -6,7 +6,7 @@ The project comprises of two main components. The first component involves using
 These are the references:
 * [Secp256k1 Program](https://docs.solana.com/developing/runtime-facilities/programs#secp256k1-program)
 * [Signing data with Metamask](https://docs.metamask.io/guide/signing-data.html#signtypeddata-v4)
-* [How to Connect a React DApp to MetaMask](https://olawanlejoel.hashnode.devhow-to-connect-a-react-dapp-to-metamask-cl3d1kosd09n2x2nvghwz3rwu)
+* [How to Connect a React DApp to MetaMask](https://olawanlejoel.hashnode.dev/how-to-connect-a-react-dapp-to-metamask-cl3d1kosd09n2x2nvghwz3rwu)
 * [How to Write Your First Anchor Program in Solana](https://www.quicknode.com/guides/solana-development/anchor/how-to-write-your-first-anchor-program-in-solana-part-1/)
 
 ## Table of Contents
